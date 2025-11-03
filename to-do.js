@@ -15,7 +15,7 @@ function renderTodos() {
         li.innerHTML = `
       <input type="checkbox" ${todo.completed ? 'checked' : ''}>
       <span class="todo-item__description">${todo.text}</span>
-      <button class="todo-item__delete">Видалити</button>`;
+      <button class="todo-item__delete">Delete</button>`;
 
         li.querySelector('input').addEventListener('change', () => {
             todos[index].completed = !todos[index].completed;
